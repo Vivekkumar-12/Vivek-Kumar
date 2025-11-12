@@ -137,6 +137,9 @@ export const portfolioData: PortfolioData = {
       title: 'Full Stack Development',
       institution: 'CipherSchools',
       date: 'July 2025',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/mern_stack.pdf" // 👈 path inside /public/
     },
     {
       id: 'java-cert',
