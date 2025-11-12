@@ -13,6 +13,7 @@ export const projectSchema = z.object({
   period: z.string(),
   description: z.array(z.string()),
   technologies: z.array(z.string()),
+  certificate: z.string().optional(),
   featured: z.boolean().optional(),
 });
 
@@ -38,6 +39,24 @@ export const certificateSchema = z.object({
   title: z.string(),
   institution: z.string(),
   date: z.string(),
+  technologies: z.array(z.string()).optional(),
+  featured: z.boolean().optional(),
+  certificate: z.string().optional(),
+});
+
+// User schema used by server storage
+export const userSchema = z.object({
+  id: z.string(),
+  username: z.string(),
+  // store hashed password in server-side types
+  passwordHash: z.string(),
+  email: z.string().optional(),
+});
+
+export const insertUserSchema = z.object({
+  username: z.string(),
+  passwordHash: z.string(),
+  email: z.string().optional(),
 });
 
 export const achievementSchema = z.object({
@@ -74,3 +93,5 @@ export type Training = z.infer<typeof trainingSchema>;
 export type Certificate = z.infer<typeof certificateSchema>;
 export type Achievement = z.infer<typeof achievementSchema>;
 export type PortfolioData = z.infer<typeof portfolioDataSchema>;
+export type User = z.infer<typeof userSchema>;
+export type InsertUser = z.infer<typeof insertUserSchema>;

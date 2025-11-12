@@ -32,39 +32,39 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
               data-testid={`card-project-${project.id}`}
             >
               <CardHeader>
-               <div className="flex items-start justify-between gap-4 mb-2">
-                <CardTitle className="text-xl flex-1" data-testid={`text-project-title-${project.id}`}>
-                  {project.title}
-                </CardTitle>
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <CardTitle className="text-xl flex-1" data-testid={`text-project-title-${project.id}`}>
+                    {project.title}
+                  </CardTitle>
 
-                {/* Top-right icons for certificate */}
-                <div className="flex items-center gap-2">
-                  {project.certificate && (
-                    <>
-                      <a
-                        href={project.certificate}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 rounded-full hover:bg-muted transition-colors"
-                        title="View Certificate"
-                      >
-                        <Eye className="w-5 h-5 text-primary" />
-                      </a>
-                      <a
-                        href={project.certificate}
-                        download
-                        className="p-1 rounded-full hover:bg-muted transition-colors"
-                        title="Download Certificate"
-                      >
-                        <Download className="w-5 h-5 text-primary" />
-                      </a>
-                    </>
-                  )}
-                  {project.featured && (
-                    <Star className="w-5 h-5 text-yellow-500 fill-yellow-500 flex-shrink-0" data-testid={`icon-featured-${project.id}`} />
-                  )}
+                  {/* Top-right icons for certificate */}
+                  <div className="flex items-center gap-2">
+                    {project.certificate && (
+                      <>
+                        <a
+                          href={project.certificate}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-1 rounded-full hover:bg-muted transition-colors"
+                          title="View Certificate"
+                        >
+                          <Eye className="w-5 h-5 text-primary" />
+                        </a>
+                        <a
+                          href={project.certificate}
+                          download
+                          className="p-1 rounded-full hover:bg-muted transition-colors"
+                          title="Download Certificate"
+                        >
+                          <Download className="w-5 h-5 text-primary" />
+                        </a>
+                      </>
+                    )}
+                    {project.featured && (
+                      <Star className="w-5 h-5 text-yellow-500 fill-yellow-500 flex-shrink-0" data-testid={`icon-featured-${project.id}`} />
+                    )}
+                  </div>
                 </div>
-              </div>
 
                 <CardDescription className="flex items-center gap-2 text-sm">
                   <Calendar className="w-4 h-4" />
