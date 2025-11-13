@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Award, BookOpen, Calendar } from 'lucide-react';
+import { Award, BookOpen, Calendar, Eye, Download } from 'lucide-react';
 import type { Training, Certificate } from '@shared/schema';
 
 interface TrainingCertificatesSectionProps {
@@ -68,9 +68,35 @@ export function TrainingCertificatesSection({ training, certificates }: Training
               {certificates.map((cert) => (
                 <Card key={cert.id} className="hover-elevate transition-all duration-300" data-testid={`card-certificate-${cert.id}`}>
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-base" data-testid={`text-cert-title-${cert.id}`}>
-                      {cert.title}
-                    </CardTitle>
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <CardTitle className="text-base flex-1" data-testid={`text-cert-title-${cert.id}`}>
+                        {cert.title}
+                      </CardTitle>
+                      {/* Top-right icons for certificate download/view */}
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        {cert.certificate && (
+                          <>
+                            <a
+                              href={cert.certificate}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-1 rounded-full hover:bg-muted transition-colors"
+                              title="View Certificate"
+                            >
+                              <Eye className="w-4 h-4 text-primary" />
+                            </a>
+                            <a
+                              href={cert.certificate}
+                              download
+                              className="p-1 rounded-full hover:bg-muted transition-colors"
+                              title="Download Certificate"
+                            >
+                              <Download className="w-4 h-4 text-primary" />
+                            </a>
+                          </>
+                        )}
+                      </div>
+                    </div>
                     <CardDescription className="flex items-center justify-between gap-4">
                       <span className="flex-1" data-testid={`text-cert-institution-${cert.id}`}>{cert.institution}</span>
                       <Badge variant="outline" className="text-xs flex-shrink-0">
