@@ -68,7 +68,8 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "public");
+  // Final Vite build output lives in dist/public
+  const distPath = path.resolve(import.meta.dirname, "../public");
 
   if (!fs.existsSync(distPath)) {
     throw new Error(
@@ -76,9 +77,10 @@ export function serveStatic(app: Express) {
     );
   }
 
+  // Serve static frontend files
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
+  // Fallback routing for SPA (React / Vite)
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
