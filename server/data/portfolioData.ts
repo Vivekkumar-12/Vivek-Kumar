@@ -46,6 +46,8 @@ export const portfolioData: PortfolioData = {
       ],
       technologies: ['HTML', 'CSS', 'MongoDB', 'React.js', 'Node.js', 'Express.js'],
       featured: true,
+      source: 'https://github.com/Vivekkumar-12/job-tracker',
+      live: 'https://example.com/job-tracker',
     },
     {
       id: 'hospital-management',
@@ -57,6 +59,8 @@ export const portfolioData: PortfolioData = {
         'Implemented user authentication and role-based access control',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL'],
+      source: 'https://github.com/Vivekkumar-12/hospital-management',
+      live: 'https://example.com/hospital-management',
     },
     {
       id: 'ai-sentiment',
@@ -68,6 +72,8 @@ export const portfolioData: PortfolioData = {
         'Integrated third-party API for real-time sentiment analysis',
       ],
       technologies: ['HTML', 'CSS', 'Python'],
+      source: 'https://github.com/Vivekkumar-12/ai-sentiment',
+      live: 'https://example.com/ai-sentiment',
     },
     {
       id: 'ecommerce',
@@ -79,6 +85,8 @@ export const portfolioData: PortfolioData = {
         'Responsive design optimized for mobile and desktop',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript'],
+      source: 'https://github.com/Vivekkumar-12/ecommerce',
+      live: 'https://example.com/ecommerce',
     },
     {
       id: 'sustainable-dev',
@@ -90,6 +98,8 @@ export const portfolioData: PortfolioData = {
         'Educational content with interactive elements',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript'],
+      source: 'https://github.com/Vivekkumar-12/sustainable-dev',
+      live: 'https://example.com/sustainable-dev',
     },
   ],
   education: [
