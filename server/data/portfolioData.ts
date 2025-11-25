@@ -9,7 +9,7 @@ export const portfolioData: PortfolioData = {
     phone: '+91-8651064680',
     linkedin: 'https://www.linkedin.com/in/vivek-kumar-b19aa5299/',
     github: 'https://github.com/Vivekkumar-12',
-    location: 'Punjab, India',
+    location: 'Motihari, Bihar, India - 845433',
     cgpa: '7.45',
   },
   skills: [
