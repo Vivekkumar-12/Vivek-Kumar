@@ -124,9 +124,8 @@ export const portfolioData: PortfolioData = {
       title: 'Full-Stack Development - Self Paced',
       institution: 'CipherSchools',
       period: 'June 2025 - July 2025',
-      technologies: ["React", "Node.js", "MongoDB"],
-      featured: true,
-      certificate: "/certificates/mern_stack cipherschools.pdf"
+      // featured: true,
+      // certificate: "/certificates/mern_stack cipherschools.pdf",
       description: [
         'Completed structured course covering basic to advanced MERN Stack concepts and project',
         'Learned new frameworks like React.js, Express.js and MongoDB database',
@@ -197,8 +196,8 @@ export const portfolioData: PortfolioData = {
       id: 'hackathon',
       title: 'Hackathon – Code-A-Hunt',
       date: 'Feb 2024',
-      featured: true,
-      certificate: "/certificates/hackathon code-a-hunt.pdf"
+      // featured: true,
+      // certificate: "/certificates/hackathon code-a-hunt.pdf"
       description: [
         'Duration: 24 Hours',
         'Held by Coding Blocks LPU',
