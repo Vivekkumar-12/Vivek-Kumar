@@ -135,7 +135,7 @@ export const portfolioData: PortfolioData = {
       institution: 'CipherSchools',
       period: 'June 2025 - July 2025',
       // featured: true,
-      // certificate: "/certificates/mern_stack cipherschools.pdf",
+      certificate: "/certificates/mern_stack cipherschools.pdf",
       description: [
         'Completed structured course covering basic to advanced MERN Stack concepts and project',
         'Learned new frameworks like React.js, Express.js and MongoDB database',
