@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Trophy, Calendar, Users } from 'lucide-react';
+import { Trophy, Calendar, Users, Eye, Download } from 'lucide-react';
 import type { Achievement } from '@shared/schema';
 
 interface AchievementsSectionProps {
@@ -57,6 +57,28 @@ export function AchievementsSection({ achievements }: AchievementsSectionProps) 
                   ))}
                 </ul>
               </CardContent>
+              {/* Add top-right icons if achievement has certificate */}
+              {achievement.certificate && (
+                <div className="absolute right-6 top-6 flex items-center gap-2">
+                  <a
+                    href={achievement.certificate}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-1 rounded-full hover:bg-muted transition-colors"
+                    title="View Certificate"
+                  >
+                    <Eye className="w-4 h-4 text-primary" />
+                  </a>
+                  <a
+                    href={achievement.certificate}
+                    download
+                    className="p-1 rounded-full hover:bg-muted transition-colors"
+                    title="Download Certificate"
+                  >
+                    <Download className="w-4 h-4 text-primary" />
+                  </a>
+                </div>
+              )}
             </Card>
           ))}
         </div>

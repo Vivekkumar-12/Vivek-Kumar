@@ -67,6 +67,7 @@ export const achievementSchema = z.object({
   title: z.string(),
   date: z.string(),
   description: z.array(z.string()),
+  certificate: z.string().optional(),
 });
 
 export const portfolioDataSchema = z.object({

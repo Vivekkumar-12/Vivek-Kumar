@@ -207,7 +207,7 @@ export const portfolioData: PortfolioData = {
       title: 'Hackathon – Code-A-Hunt',
       date: 'Feb 2024',
       // featured: true,
-      // certificate: "/certificates/hackathon code-a-hunt.pdf"
+      certificate: "/certificates/hackathon code-a-thon.pdf",
       description: [
         'Duration: 24 Hours',
         'Held by Coding Blocks LPU',
