@@ -124,58 +124,72 @@ export const portfolioData: PortfolioData = {
       title: 'Full-Stack Development - Self Paced',
       institution: 'CipherSchools',
       period: 'June 2025 - July 2025',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/mern_stack cipherschools.pdf"
       description: [
         'Completed structured course covering basic to advanced MERN Stack concepts and project',
         'Learned new frameworks like React.js, Express.js and MongoDB database',
         'Built a MERN project on Job application tracker and earned certification',
       ],
+      
     },
   ],
   certificates: [
-    {
-      id: 'fullstack-cert',
-      title: 'Full Stack Development',
-      institution: 'CipherSchools',
-      date: 'July 2025',
-      technologies: ["React", "Node.js", "MongoDB"],
-      featured: true,
-      certificate: "/certificates/mern_stack.pdf" // 👈 path inside /public/
-    },
+  
     {
       id: 'java-cert',
       title: 'Java Language',
       institution: 'Iamnoe',
       date: 'May 2025',
+      technologies: ["Java"],
+      featured: true,
+      certificate: "/certificates/java iamneo.pdf"  // 👈 path inside /public/
     },
     {
       id: 'social-networks',
       title: 'Social Networks',
       institution: 'NPTEL (IIT Madras)',
       date: 'April 2025',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/Social Networks nptel.pdf"
     },
     {
       id: 'cpp-cert',
       title: 'C++ Language',
       institution: 'Iamnoe',
       date: 'Dec 2024',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/cpp iamneo.pdf"
     },
     {
       id: 'hardware-os',
       title: 'Introduction to Hardware and Operating Systems',
       institution: 'Coursera',
       date: 'Sept 2024',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/Coursera  Introduction to Hardware and Operating Systems.pdf"
     },
     {
       id: 'networking',
       title: 'The Bits and Bytes of Computer Networking',
       institution: 'Coursera',
       date: 'Sept 2024',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/coursera The Bits and Bytes of Computer Networking.pdf"
     },
     {
       id: 'product-mgmt',
       title: 'Product Management',
       institution: 'Udemy',
       date: 'Oct 2023',
+      technologies: ["React", "Node.js", "MongoDB"],
+      featured: true,
+      certificate: "/certificates/product management udemy.pdf"
     },
   ],
   achievements: [
@@ -183,11 +197,14 @@ export const portfolioData: PortfolioData = {
       id: 'hackathon',
       title: 'Hackathon – Code-A-Hunt',
       date: 'Feb 2024',
+      featured: true,
+      certificate: "/certificates/hackathon code-a-hunt.pdf"
       description: [
         'Duration: 24 Hours',
         'Held by Coding Blocks LPU',
         'My team ranked 15 out of 200 teams',
       ],
+     
     },
   ],
 };
