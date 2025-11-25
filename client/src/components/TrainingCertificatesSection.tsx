@@ -32,9 +32,37 @@ export function TrainingCertificatesSection({ training, certificates }: Training
               {training.map((item) => (
                 <Card key={item.id} className="hover-elevate transition-all duration-300" data-testid={`card-training-${item.id}`}>
                   <CardHeader>
-                    <CardTitle className="text-lg" data-testid={`text-training-title-${item.id}`}>
-                      {item.title}
-                    </CardTitle>
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <CardTitle className="text-lg flex-1" data-testid={`text-training-title-${item.id}`}>
+                        {item.title}
+                      </CardTitle>
+
+                      {/* Top-right icons for training certificate */}
+                      <div className="flex items-center gap-2">
+                        {item.certificate && (
+                          <>
+                            <a
+                              href={item.certificate}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="p-1 rounded-full hover:bg-muted transition-colors"
+                              title="View Certificate"
+                            >
+                              <Eye className="w-4 h-4 text-primary" />
+                            </a>
+                            <a
+                              href={item.certificate}
+                              download
+                              className="p-1 rounded-full hover:bg-muted transition-colors"
+                              title="Download Certificate"
+                            >
+                              <Download className="w-4 h-4 text-primary" />
+                            </a>
+                          </>
+                        )}
+                      </div>
+                    </div>
+
                     <CardDescription className="flex items-center justify-between gap-4">
                       <span data-testid={`text-training-institution-${item.id}`}>{item.institution}</span>
                       <Badge variant="secondary" className="text-xs">
