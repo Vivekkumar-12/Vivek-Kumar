@@ -1,8 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Star } from 'lucide-react';
+import { Calendar, Star, Eye, Download, Github, ExternalLink } from 'lucide-react';
 import type { Project } from '@shared/schema';
-import { Eye, Download } from 'lucide-react';
 
 
 interface ProjectsSectionProps {
@@ -39,6 +38,28 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
 
                   {/* Top-right icons for certificate */}
                   <div className="flex items-center gap-2">
+                    {project.source && (
+                      <a
+                        href={project.source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1 rounded-full hover:bg-muted transition-colors"
+                        title="View Source (GitHub)"
+                      >
+                        <Github className="w-5 h-5 text-primary" />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1 rounded-full hover:bg-muted transition-colors"
+                        title="Open Live Demo"
+                      >
+                        <ExternalLink className="w-5 h-5 text-primary" />
+                      </a>
+                    )}
                     {project.certificate && (
                       <>
                         <a

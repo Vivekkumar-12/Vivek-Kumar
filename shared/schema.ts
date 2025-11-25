@@ -13,6 +13,8 @@ export const projectSchema = z.object({
   period: z.string(),
   description: z.array(z.string()),
   technologies: z.array(z.string()),
+  source: z.string().url().optional(),
+  live: z.string().url().optional(),
   certificate: z.string().optional(),
   featured: z.boolean().optional(),
 });
@@ -32,6 +34,7 @@ export const trainingSchema = z.object({
   institution: z.string(),
   period: z.string(),
   description: z.array(z.string()),
+  certificate: z.string().optional(),
 });
 
 export const certificateSchema = z.object({
