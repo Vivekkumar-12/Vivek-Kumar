@@ -46,7 +46,7 @@ export const portfolioData: PortfolioData = {
       ],
       technologies: ['HTML', 'CSS', 'MongoDB', 'React.js', 'Node.js', 'Express.js'],
       featured: true,
-      source: 'https://github.com/Vivekkumar-12/job-tracker',
+      source: 'https://github.com/Vivekkumar-12/Job-application-tracker',
       live: 'https://example.com/job-tracker',
     },
     {
@@ -59,7 +59,7 @@ export const portfolioData: PortfolioData = {
         'Implemented user authentication and role-based access control',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL'],
-      source: 'https://github.com/Vivekkumar-12/hospital-management',
+      source: 'https://github.com/Vivekkumar-12/HospitalEase',
       live: 'https://example.com/hospital-management',
     },
     {
@@ -72,7 +72,7 @@ export const portfolioData: PortfolioData = {
         'Integrated third-party API for real-time sentiment analysis',
       ],
       technologies: ['HTML', 'CSS', 'Python'],
-      source: 'https://github.com/Vivekkumar-12/ai-sentiment',
+      source: 'https://github.com/Vivekkumar-12/AI-Brand-Sentiment-Analyzer',
       live: 'https://example.com/ai-sentiment',
     },
     {
@@ -85,7 +85,7 @@ export const portfolioData: PortfolioData = {
         'Responsive design optimized for mobile and desktop',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      source: 'https://github.com/Vivekkumar-12/ecommerce',
+      source: 'https://github.com/Vivekkumar-12/FreshBasket',
       live: 'https://example.com/ecommerce',
     },
     {
@@ -98,7 +98,7 @@ export const portfolioData: PortfolioData = {
         'Educational content with interactive elements',
       ],
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      source: 'https://github.com/Vivekkumar-12/sustainable-dev',
+      source: 'https://github.com/Vivekkumar-12/KnowSustainable',
       live: 'https://example.com/sustainable-dev',
     },
   ],
