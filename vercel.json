@@ -2,8 +2,10 @@
   "version": 2,
   "functions": {
     "dist/api/**/*.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "nodejs20.x",
+      "includeFiles": "attached_assets/**"
     }
   },
-  "outputDirectory": "dist"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public"
 }
