@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.{ts,js}": {
-      "runtime": "nodejs20.x",
-      "includeFiles": "attached_assets/**"
-    }
-  },
+  
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public"
 }
