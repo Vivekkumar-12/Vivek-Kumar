@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "dist/api/**/*.js": {
+    "api/**/*.ts": {
       "runtime": "nodejs20.x",
       "includeFiles": "attached_assets/**"
     }
