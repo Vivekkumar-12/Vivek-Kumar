@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import path from "path";
-import { portfolioData } from "./data/portfolioData";
+import { portfolioData } from "@shared/portfolioData";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API endpoint to get portfolio data

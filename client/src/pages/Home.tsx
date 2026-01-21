@@ -1,4 +1,3 @@
-import { useQuery } from '@tanstack/react-query';
 import { Navigation } from '@/components/Navigation';
 import { HeroSection } from '@/components/HeroSection';
 import { AboutSection } from '@/components/AboutSection';
@@ -8,34 +7,9 @@ import { EducationSection } from '@/components/EducationSection';
 import { TrainingCertificatesSection } from '@/components/TrainingCertificatesSection';
 import { AchievementsSection } from '@/components/AchievementsSection';
 import { ContactSection } from '@/components/ContactSection';
-import type { PortfolioData } from '@shared/schema';
+import { portfolioData } from '@shared/portfolioData';
 
 export default function Home() {
-  const { data: portfolioData, isLoading } = useQuery<PortfolioData>({
-    queryKey: ['/api/portfolio'],
-  });
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="text-muted-foreground">Loading portfolio...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!portfolioData) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-muted-foreground">Unable to load portfolio data</p>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen">
       <Navigation />
