@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx server/index.ts",
-    "build:functions": "esbuild api/*.ts --platform=node --format=esm --outdir=dist/api --packages=external",
-    "build": "vite build && npm run build:functions",
+    "build": "vite build",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "preview": "vite preview"
   },
