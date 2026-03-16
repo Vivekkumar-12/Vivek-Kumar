@@ -76,6 +76,18 @@ export const portfolioData: PortfolioData = {
       live: 'https://example.com/ai-sentiment',
     },
     {
+      id: 'calender-manager',
+      title: 'Digital Calendar Manager',
+      period: '2025',
+      description: [
+        'Built a full-stack calendar app with event scheduling and reminder workflows',
+        'Implemented secure authentication and protected event management APIs',
+        'Integrated calendar UI with backend support for reminders and event tracking',
+      ],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'JWT'],
+      source: 'https://github.com/Vivekkumar-12/Calender-Manager',
+    },
+    {
       id: 'ecommerce',
       title: 'E-commerce Website',
       period: 'Sept 2023 – Dec 2023',
