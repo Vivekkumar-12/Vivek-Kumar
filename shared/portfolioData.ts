@@ -10,7 +10,7 @@ export const portfolioData: PortfolioData = {
     linkedin: 'https://www.linkedin.com/in/vivek-kumar-b19aa5299/',
     github: 'https://github.com/Vivekkumar-12',
     location: 'Motihari, Bihar, India - 845433',
-    cgpa: '7.45',
+    cgpa: '7.69',
   },
   skills: [
     {
@@ -46,8 +46,8 @@ export const portfolioData: PortfolioData = {
       ],
       technologies: ['HTML', 'CSS', 'MongoDB', 'React.js', 'Node.js', 'Express.js'],
       featured: true,
-      source: 'https://github.com/Vivekkumar-12/Job-application-tracker',
-      live: 'https://example.com/job-tracker',
+      source: 'https://github.com/Vivekkumar-12/Job-Tracker',
+      live: 'https://job-application-tracker.vercel.app/',
     },
     {
       id: 'hospital-management',
@@ -73,7 +73,7 @@ export const portfolioData: PortfolioData = {
       ],
       technologies: ['HTML', 'CSS', 'Python'],
       source: 'https://github.com/Vivekkumar-12/AI-Brand-Sentiment-Analyzer',
-      live: 'https://example.com/ai-sentiment',
+      live: 'https://brand-echo-sentiment.vercel.app/',
     },
     {
       id: 'ecommerce',
@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
       ],
       technologies: ['HTML', 'CSS', 'JavaScript'],
       source: 'https://github.com/Vivekkumar-12/FreshBasket',
-      live: 'https://example.com/ecommerce',
+      live: 'https://example.com/ecommerce', 
     },
     {
       id: 'sustainable-dev',

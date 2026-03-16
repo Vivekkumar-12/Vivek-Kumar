@@ -49,7 +49,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                         <Github className="w-5 h-5 text-primary" />
                       </a>
                     )}
-                    {project.live && (
+                    {project.id === 'ai-sentiment' && project.live && (
                       <a
                         href={project.live}
                         target="_blank"
