@@ -11,7 +11,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Serve resume PDF
   app.get('/api/resume', (req, res) => {
-    const resumePath = path.join(process.cwd(), 'attached_assets', 'Vivek_kumar__1761752233424.pdf');
+    const resumePath = path.join(process.cwd(), 'client', 'public', 'certificates', 'Vivek_kumar_general cv 2.pdf');
     res.download(resumePath, 'Vivek_Kumar_Resume.pdf', (err) => {
       if (err) {
         console.error('Error downloading resume:', err);

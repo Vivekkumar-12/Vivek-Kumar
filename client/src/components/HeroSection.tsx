@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, Download, Eye } from 'lucide-react';
 import profilePhoto from '@assets/profile photo_1761752240811.jpeg';
 
 interface HeroSectionProps {
@@ -81,6 +81,21 @@ export function HeroSection({ personalInfo }: HeroSectionProps) {
                 data-testid="button-view-projects"
               >
                 View Projects
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                data-testid="button-view-resume"
+              >
+                <a
+                  href="/certificates/Vivek_kumar_general%20cv%202.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Resume
+                </a>
               </Button>
               <Button
                 size="lg"

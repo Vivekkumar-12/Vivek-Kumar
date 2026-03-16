@@ -1,12 +1,12 @@
 import fs from "fs/promises";
 import path from "path";
 
-const RESUME_FILE = "Vivek_kumar__1761752233424.pdf";
+const RESUME_FILE = "Vivek_kumar_general cv 2.pdf";
 const DOWNLOAD_NAME = "Vivek_Kumar_Resume.pdf";
 
 export default async function handler(_req: any, res: any) {
   try {
-    const filePath = path.join(process.cwd(), "attached_assets", RESUME_FILE);
+    const filePath = path.join(process.cwd(), "client", "public", "certificates", RESUME_FILE);
     const fileBuffer = await fs.readFile(filePath);
 
     res.setHeader("Content-Type", "application/pdf");
