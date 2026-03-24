@@ -33,7 +33,7 @@ export function AboutSection({ personalInfo }: AboutSectionProps) {
       icon: Briefcase,
       label: 'Experience',
       value: '5+ Projects',
-      detail: '7+ Certifications',
+      detail: '7+ Certificates',
     },
   ];
 
