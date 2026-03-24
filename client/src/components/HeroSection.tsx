@@ -20,7 +20,7 @@ export function HeroSection({ personalInfo }: HeroSectionProps) {
   const stats = [
     { label: 'CGPA', value: personalInfo.cgpa },
     { label: 'Projects', value: '5+' },
-    { label: 'Certifications', value: '7+' },
+    { label: 'Certificates', value: '7+' },
   ];
 
   const socialLinks = [
